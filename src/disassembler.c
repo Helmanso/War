@@ -41,6 +41,7 @@ int branching_opcode(unsigned char opcode)
     return (0);
 }
 
+//didn't include the full code of disass ya ne9al
 int disass(unsigned char *mapped, int i, t_instructions instructions[256])
 {
     unsigned char opcode;
