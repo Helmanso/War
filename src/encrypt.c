@@ -39,6 +39,7 @@ void    encrypt(void *payload, int size, t_seed *seed)
     while (i < size)
     {
         ((unsigned char *)payload)[i] ^= seed->w;
+        // i removed to original encryption cuz we don't do that here bro
         i++;
     }
 }
